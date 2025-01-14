@@ -4,13 +4,16 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\BrandController;
+use App\Http\Controllers\PartnerController;
 use Illuminate\Support\Facades\Route;
 
 
 // MAIN ROUTES
 Route::get('/', [HomeController::class, 'index']);
 Route::get('/brendovi', [BrandController::class, 'brendoviPocetna'])->name('brands');
+Route::get('/partneri', [PartnerController::class, 'partneriPocetna'])->name('partners');
 
+// SINGLE PROJECT
 Route::get('/projekat', function() {
     return view('projects.projekat');
 });
@@ -32,6 +35,8 @@ Route::middleware('auth')->group(function () {
     // BRANDS
     Route::resource('brands', BrandController::class)->except(['show']);
 
+    // PARTNERS
+    Route::resource('partners', PartnerController::class)->except(['show']);
 });
 
 require __DIR__.'/auth.php';
