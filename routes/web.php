@@ -14,9 +14,8 @@ Route::get('/brendovi', [BrandController::class, 'brendoviPocetna'])->name('bran
 Route::get('/partneri', [PartnerController::class, 'partneriPocetna'])->name('partners');
 
 // SINGLE PROJECT
-Route::get('/projekat', function() {
-    return view('projects.projekat');
-});
+Route::get('/projekat/{id}', [ProjectController::class, 'show'])->name('projects.show');
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');

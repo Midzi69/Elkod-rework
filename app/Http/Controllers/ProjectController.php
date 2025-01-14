@@ -89,6 +89,13 @@ class ProjectController extends Controller
         return redirect()->route('projects.index')->with('success', 'Project added successfully');
     }
 
+    public function show($id)
+    {   
+        $project = Project::findOrFail($id);
+        return view('projects.single-project', compact('project'));
+    }
+
+
     
     
 }

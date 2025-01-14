@@ -12,4 +12,5 @@ class HomeController extends Controller
         $projects = Project::all();
         return view('welcome', compact('projects'));
     }
+
 }

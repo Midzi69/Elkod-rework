@@ -94,7 +94,16 @@
           <li><a href="/brendovi">Brendovi</a></li>
           <li><a href="/partneri">Partneri</a></li>
           <li><a href="#contact">Kontakt</a></li>
-          <li><a href="/login">Admin Login</a></li>
+          @if(Route::has('login'))
+          <li>
+            @auth
+            <a href="/dashboard">Dashboard</a>
+            @else
+            <a href="/login">Admin Login</a>
+            @endauth
+          </li>
+          @endif
+
 
    
         </ul>
@@ -259,7 +268,7 @@
 
                 <div class="portfolio-links">
                   <a href="{{ asset('storage/' . $project->picture) }}" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="icofont-eye"></i></a>
-                  <a href="/projekat" title="Pogledaj više"><i class="icofont-external-link"></i></a>
+                  <a href="{{ route('projects.show', $project->id) }}" title="Pogledaj više"><i class="icofont-external-link"></i></a>
                 </div>
               </div>
             </div>
@@ -390,6 +399,7 @@
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  <i>nesto</i>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
