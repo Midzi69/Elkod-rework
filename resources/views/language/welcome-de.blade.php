@@ -382,8 +382,6 @@
       </div>
     </section>
 
-
-    
   </main><!-- End #main
 
   <!-- ======= Footer ======= -->
@@ -400,14 +398,8 @@
     </div>
   </footer><!-- End Footer -->
 
-  
-
-  <a href="#" class="back-to-top">
-    <i class="icofont-simple-up"></i>
-    
-  </a>
-
-  
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  <i>nesto</i>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>

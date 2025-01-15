@@ -1,4 +1,3 @@
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -1092,6 +1091,18 @@ section {
   padding: 0 0 0 0;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
   .portfolio-details .portfolio-description h2 {
     width: 100%;
@@ -1100,6 +1111,8 @@ section {
     position: static;
     margin-top: 30px;
   }
+
+
 }
 
 /*--------------------------------------------------------------
@@ -1548,4 +1561,11 @@ section {
 
 .portfolio-links a i {
   font-size: 18px;
+}
+
+.portfolio-container img {
+  width: 100%; 
+  height: 250px; 
+  object-fit: cover; 
+  border-radius: 5px; 
 }

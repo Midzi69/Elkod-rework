@@ -88,12 +88,12 @@
 
       <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
-          <li class="active"><a href="/">Početna</a></li>
-          <li><a href="#about">O nama</a></li>
-          <li><a href="#test">Projekti</a></li>
-          <li><a href="/brendovi">Brendovi</a></li>
-          <li><a href="/partneri">Partneri</a></li>
-          <li><a href="#contact">Kontakt</a></li>
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#test">Projects</a></li>
+          <li><a href="/brendovi">Brands</a></li>
+          <li><a href="/partneri">Partners</a></li>
+          <li><a href="#contact">Contact</a></li>
           @if(Route::has('login'))
           <li>
             @auth
@@ -382,8 +382,6 @@
       </div>
     </section>
 
-
-    
   </main><!-- End #main
 
   <!-- ======= Footer ======= -->
@@ -400,14 +398,8 @@
     </div>
   </footer><!-- End Footer -->
 
-  
-
-  <a href="#" class="back-to-top">
-    <i class="icofont-simple-up"></i>
-    
-  </a>
-
-  
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+  <i>nesto</i>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>

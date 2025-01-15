@@ -1,4 +1,4 @@
-<x-guest-layout>
+<x-guest-layout style="background-image: url('{{ asset('assets/img/slide/slide-1.webp') }}'); background-size: cover; background-position: center;">
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
