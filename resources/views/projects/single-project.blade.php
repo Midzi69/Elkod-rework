@@ -11,7 +11,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="{{ asset('assets/img/favicon.ico') }}" rel="icon">
   <link href="assets/img/apple-touch-icon.html" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -55,7 +55,7 @@
 
       <div class="logo float-left">
         <!-- Uncomment below if you prefer to use an image logo -->
-         <a href="/"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+         <a href="/"><img src="{{ asset('assets/img/logo.png') }}" alt="" class="img-fluid"></a>
       </div>
 
       <nav class="nav-menu float-right d-none d-lg-block">

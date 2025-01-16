@@ -88,12 +88,14 @@
 
       <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
-          <li class="active"><a href="/">Home</a></li>
+          <li class="active"><a href="/en">Home</a></li>
           <li><a href="#about">About Us</a></li>
           <li><a href="#test">Projects</a></li>
           <li><a href="/brendovi">Brands</a></li>
           <li><a href="/partneri">Partners</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="/">Srpski</a></li>
+          <li><a href="/de" class="de">Deutsch</a></li>
           @if(Route::has('login'))
           <li>
             @auth
@@ -124,7 +126,7 @@
             <div class="carousel-container">
               <div class="carousel-content container">
                 <h2 class="animate__animated animate__fadeInDown">ELKOD <span>DOO</span></h2>
-                <p class="animate__animated animate__fadeInUp">Inženjering, projektovanje i izvođenje radova u oblasti elektroinstalacija.</p>
+                <p class="animate__animated animate__fadeInUp">Engineering, design and execution of works in the field of electrical installations.</p>
               </div>
             </div>
             <img data-src="assets/img/slide/slide-1.webp" 
@@ -137,8 +139,9 @@
           <div class="carousel-item">
             <div class="carousel-container">
               <div class="carousel-content container">
-                <h2 class="animate__animated animate__fadeInDown">Ciljevi</h2>
-                <p class="animate__animated animate__fadeInUp">Cilj preduzeća ELKOD je stručno obavljen posao, poštovanje rokova i ugovorenih obaveza.</p>
+                <h2 class="animate__animated animate__fadeInDown">Goals</h2>
+                <p class="animate__animated animate__fadeInUp">The goal of the company ELKOD is professionally done work, meeting deadlines and
+                contractual obligations.</p>
               </div>
             </div>
             <img data-src="assets/img/slide/slide-2.webp" 
@@ -192,16 +195,16 @@
           <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
 
             <div class="section-title">
-              <h2>O Nama</h2>
-              <p>Privredno društvo “ELKOD” d.o.o. za inženjering, projektovanje i izvođenje radova
-              osnovano je u januaru 2014. godine u Sremskoj Mitrovici.</p>
+            <h2>About us</h2>
+              <p>Company "ELKOD" d.o.o. for engineering, design and execution of works
+               was founded in January 2014 in Sremska Mitrovica.</p>
               <br>
-              <p>Pretežna delatnost preduzeća je inženjering, kao produkt višegodišnjeg iskustva na elektro
-              poslovima širokog spektra u području radova jake i slabe struje, na svim vrstama
-              građevinskih objekata; rezidencijalni, komercijalno-poslovni i objekti industrijsko-proizvodnog
-              karaktera, tj. pogoni, kao i izvođenje elektromontažnih radova na elektroenergetskim
-              objektima, sa posebinim akcentom na izradi elektroenergetskih, upravljačkih i razvodnih
-              ormana.</p>
+              <p>The predominant activity of the company is engineering, as a product of many years of experience in electrical engineering
+               a wide range of jobs in the field of strong and weak current works, on all types
+               buildings; residential, commercial-business and industrial-production facilities
+               character, ie. plants, as well as performing electrical installation work on power
+               facilities, with special emphasis on the construction of power, control and distribution
+               closet.</p>
             </div>
 
           </div>
@@ -216,12 +219,12 @@
         <div class="row  d-flex align-items-stretch">
 
           <div class="col-lg-12 faq-item" data-aos="fade-up" data-aos-delay="100">
-            <h4>POUZDANOST</h4>
+            <h4>RELIABILITY</h4>
             <p>
-              Pouzdanost, kvalitet rada i organizacija preduzeća dovode do uspešne saradnje
-              sa brojnim <a href="/partneri">poslovnim partnerima</a>. Svesni smo da samo stručno znanje,
-              permanentna edukacija i primena savremenih metoda u našem poslovanju može
-              učiniti zadovoljnim naše poslovne partnere.
+              Reliability, quality of work and organization of the company lead to successful cooperation
+               with numerous <a href="/partneri">business partners</a>. We are aware that only professional knowledge,
+               permanent education and application of modern methods in our business can
+               make our business partners happy.
             </p>
           </div>
         </div>
@@ -237,14 +240,14 @@
     <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="section-title">
-            <h2>Neki od naših projekata</h2>
-            <p>Zahvaljujući iskustvu, liderskim odnosom prema poslu i proaktivnim pristupu tržištu formiran
-                je tim apsolutno posvećen konstantnom unapređenju zadovoljstva klijenata, povećanju
-                obima poslovanja, apsolutnom kvalitetu usluga, i stvaranju dugoročnog obostanog benefita
-                kao možda i najvažnijeg principa poslovanja.
-                Tim sa više od 40 zaposlenih, čine visoko stručni inženjersko-tehničkim kadrom, monterima,
-                elektroinstalaterima sa višegodišnjim zajedničkim iskustvom na poslovima za investitore sa
-                visokim standardima i zahtevima.</p>
+        <h2>Some of our projects</h2>
+          <p>Thanks to experience, leadership attitude towards work and proactive approach to the market formed
+               is a team absolutely committed to constantly improving customer satisfaction, increasing
+               the volume of business, the absolute quality of services, and the creation of long-term mutual benefits
+               as perhaps the most important principle of business.
+               A team of more than 40 employees, consisting of highly professional engineering and technical staff, installers,
+               electricians with many years of joint experience in business for investors with
+               high standards and requirements.</p>
         </div>
 
         <div class="row">
@@ -292,27 +295,26 @@
         <div class="row  d-flex align-items-stretch">
 
           <div class="col-lg-12 faq-item" data-aos="fade-up" data-aos-delay="100">
-            <h4>PRIDRUŽI SE NAŠEM TIMU:</h4>
+            <h4>JOIN OUR TEAM:</h4>
             <img src="assets/img/pridružise.jpg" class="img-fluid" alt="">
                        <p>
-              S obzirom da konstantno razvijamo svoje poslovanje, obrazovani i pouzdani ljudi su uvek
-              dobrodošli u naš tim, možete poslati mail na <a href="mailto:office@elkod.rs?subject=Poslovi">office@elkod.rs</a>
+                       Since we are constantly developing our business, educated and reliable people are always welcome to our team. You can send mail to <a href="mailto:office@elkod.rs?subject=Poslovi">office@elkod.rs</a>
               
               <form action="/send" method="post" enctype="multipart/form-data">
     <div class="form-group">
-        <input class="form-control" placeholder="Email Adresa:" type="email" id="from_email" name="from_email" required><br><br>
+        <input class="form-control" placeholder="Email Address:" type="email" id="from_email" name="from_email" required><br><br>
     </div>
     
     <div class="form-group">
-        <input class="form-control" placeholder="Naslov:" type="text" id="subject" name="subject" required><br><br>
+        <input class="form-control" placeholder="Title:" type="text" id="subject" name="subject" required><br><br>
     </div>
     
-    <textarea class="form-control" placeholder="Poruka:" id="message" name="message" required></textarea><br><br>
+    <textarea class="form-control" placeholder="Message:" id="message" name="message" required></textarea><br><br>
     
-    <label for="file">Vaš CV:</label><br>
+    <label for="file">Your CV:</label><br>
     <input type="file" id="file" name="file"><br><br>
     
-    <input class="apliciraj" type="submit" value="Apliciraj">
+    <input class="apliciraj" type="submit" value="Submit">
 </form>
 
 
@@ -336,7 +338,7 @@
       <div class="container ">
 
         <div class="section-title">
-          <h2>Kontakt</h2>
+          <h2>Contact</h2>
         </div>
 
         <div class="row">
@@ -344,11 +346,11 @@
           <div class="col-lg-6 d-flex align-items-stretch" data-aos="fade-up">
             <div class="info-box">
               <i class="bx bx-map"></i>
-              <h3>Adrese:</h3>
-              <h3>Adresa sedišta</h3>
-                    <p>Trg Nikole Pašića bb, TC Madesa, lokal br. 17</p> 
-                    <p> 22000 Sremska Mitrovica, Srbija</p>
-              <h3>Adresa predstavništva</h3>
+              <h3>Addresses</h3>
+              <h3>Company headquarters address</h3>
+                 <p>Trg nikole Pašića BB, TC Madesa</p> 
+                 <p>lokal br. 17 22000 Sremska Mitrovica</p>
+              <h3>Address of the company representative office</h3>
                     <p>Pirazzistraße 18</p> 
                     <p>63067 Offenbach am Main, Deutschland</p>
             </div>
@@ -368,7 +370,7 @@
           <div class="col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="info-box ">
               <i class="bx bx-phone-call"></i>
-              <h3>Pozovite nas</h3>
+              <h3>Call Us</h3>
               <p>
  <a href="tel:+381 64 2577 884">+381 64 2577 884</a>
 
@@ -399,7 +401,6 @@
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-  <i>nesto</i>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>

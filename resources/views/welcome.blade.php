@@ -94,6 +94,8 @@
           <li><a href="/brendovi">Brendovi</a></li>
           <li><a href="/partneri">Partneri</a></li>
           <li><a href="#contact">Kontakt</a></li>
+          <li><a href="/en">English</a></li>
+          <li><a href="/de" class="de">Deutsch</a></li>
           @if(Route::has('login'))
           <li>
             @auth

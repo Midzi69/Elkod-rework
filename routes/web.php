@@ -16,6 +16,10 @@ Route::get('/partneri', [PartnerController::class, 'partneriPocetna'])->name('pa
 // SINGLE PROJECT
 Route::get('/projekat/{id}', [ProjectController::class, 'show'])->name('projects.show');
 
+// MULTI-LANGUAGE
+Route::get('/en', [HomeController::class, 'indexEn']);
+Route::get('/de', [HomeController::class, 'indexDe']);
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');

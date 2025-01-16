@@ -88,12 +88,14 @@
 
       <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
-          <li class="active"><a href="/">Početna</a></li>
-          <li><a href="#about">O nama</a></li>
-          <li><a href="#test">Projekti</a></li>
-          <li><a href="/brendovi">Brendovi</a></li>
-          <li><a href="/partneri">Partneri</a></li>
+        <li class="active"><a href="/de">Startseite</a></li>
+          <li><a href="#about">Über uns</a></li>
+          <li><a href="#test">Projekte</a></li>
+          <li><a href="/brendovi">Marken</a></li>
+          <li><a href="/partneri">Partner</a></li>
           <li><a href="#contact">Kontakt</a></li>
+          <li><a href="/en" class="en">English</a></li>
+          <li><a href="/" class="sr">Srpski</a></li>
           @if(Route::has('login'))
           <li>
             @auth
@@ -124,7 +126,7 @@
             <div class="carousel-container">
               <div class="carousel-content container">
                 <h2 class="animate__animated animate__fadeInDown">ELKOD <span>DOO</span></h2>
-                <p class="animate__animated animate__fadeInUp">Inženjering, projektovanje i izvođenje radova u oblasti elektroinstalacija.</p>
+                <p class="animate__animated animate__fadeInUp">Engineering, Projektierung und Erbringung von Arbeitsleistungen im Elektroinstalierungsbereich.</p>
               </div>
             </div>
             <img data-src="assets/img/slide/slide-1.webp" 
@@ -137,8 +139,8 @@
           <div class="carousel-item">
             <div class="carousel-container">
               <div class="carousel-content container">
-                <h2 class="animate__animated animate__fadeInDown">Ciljevi</h2>
-                <p class="animate__animated animate__fadeInUp">Cilj preduzeća ELKOD je stručno obavljen posao, poštovanje rokova i ugovorenih obaveza.</p>
+                <h2 class="animate__animated animate__fadeInDown">Ziele</h2>
+                <p class="animate__animated animate__fadeInUp">Die Wirtschaftsgesellschaft ELKOD GmbH  setzt  bei ihrer  Geschäftstätigkeit folgende Ziele: fachgerechte  Erbringung von Arbeitsleistungen, Achtung von  vereinbarten Fristen und Vertragspflichten.</p>
               </div>
             </div>
             <img data-src="assets/img/slide/slide-2.webp" 
@@ -191,17 +193,13 @@
 
           <div class="col-lg-6 d-flex flex-column justify-content-center about-content">
 
-            <div class="section-title">
-              <h2>O Nama</h2>
-              <p>Privredno društvo “ELKOD” d.o.o. za inženjering, projektovanje i izvođenje radova
-              osnovano je u januaru 2014. godine u Sremskoj Mitrovici.</p>
+          <div class="section-title">
+              <h2>Über uns</h2>
+              <p>Die Wirtschaftsgesellschaft ELKOD GmbH für Engineering, Projektierung und Erbringung von Arbeitleistungen wurde im Jahr 2014 in Sremska Mitrovica, Republik Serbien gegründet.</p>
               <br>
-              <p>Pretežna delatnost preduzeća je inženjering, kao produkt višegodišnjeg iskustva na elektro
-              poslovima širokog spektra u području radova jake i slabe struje, na svim vrstama
-              građevinskih objekata; rezidencijalni, komercijalno-poslovni i objekti industrijsko-proizvodnog
-              karaktera, tj. pogoni, kao i izvođenje elektromontažnih radova na elektroenergetskim
-              objektima, sa posebinim akcentom na izradi elektroenergetskih, upravljačkih i razvodnih
-              ormana.</p>
+              <p>Die überwigende Tätigkeit ist Engineering auf Basis einer mehrjährigen Erfahrung in Elektrogeschäften, die ein breites Spektrum umfassen:</p>
+              <p>- Arbeitsleistungen im Bereich vom Stark-  und Schwachstrom an allen Arten von Bauobjekten wie Residenzen, Geschäftsgebäude, industrielle Produktionshallen und –betriebe,</p>
+              <p>- Elektromontagenarbeiten an elektroenergetischen Objekten mit besonderem Gewichtspunkt auf  Anfertigung von elektroenergetischen  Steuerungs- und Vrteilungstafel.</p>
             </div>
 
           </div>
@@ -215,13 +213,11 @@
 
         <div class="row  d-flex align-items-stretch">
 
-          <div class="col-lg-12 faq-item" data-aos="fade-up" data-aos-delay="100">
-            <h4>POUZDANOST</h4>
+        <div class="col-lg-12 faq-item" data-aos="fade-up" data-aos-delay="100">
+            <h4>VERLÄSSLICHKEIT</h4>
             <p>
-              Pouzdanost, kvalitet rada i organizacija preduzeća dovode do uspešne saradnje
-              sa brojnim <a href="/partneri">poslovnim partnerima</a>. Svesni smo da samo stručno znanje,
-              permanentna edukacija i primena savremenih metoda u našem poslovanju može
-              učiniti zadovoljnim naše poslovne partnere.
+                            Die Zuverläßigkeit, Qualität unserer Produkte und gute Betriebsorganisation als wesentliche Leistungsmerkmale führen zur erfolgreichen Zusammenarbeit mit
+            <a href="/partneri-de">zahlreichen Auftraggebern</a>. Wir sind bewußt dessen, dass nur die Verfügung über Fachkenntnisse, permanente Weiterausbildung und Anwendung von modernen  Methoden unsere Auftraggeber zufriedengestellt werden können.
             </p>
           </div>
         </div>
@@ -236,15 +232,9 @@
     <section id="portfolio" class="portfolio section">
     <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-        <div class="section-title">
-            <h2>Neki od naših projekata</h2>
-            <p>Zahvaljujući iskustvu, liderskim odnosom prema poslu i proaktivnim pristupu tržištu formiran
-                je tim apsolutno posvećen konstantnom unapređenju zadovoljstva klijenata, povećanju
-                obima poslovanja, apsolutnom kvalitetu usluga, i stvaranju dugoročnog obostanog benefita
-                kao možda i najvažnijeg principa poslovanja.
-                Tim sa više od 40 zaposlenih, čine visoko stručni inženjersko-tehničkim kadrom, monterima,
-                elektroinstalaterima sa višegodišnjim zajedničkim iskustvom na poslovima za investitore sa
-                visokim standardima i zahtevima.</p>
+    <div class="section-title">
+          <h2>Einige unserer Projekte</h2>
+          <p>Dank der Erfahrung, verantwortungsvollen Führungsverhalten und proaktiver Marktsuche wurde ein Mitarbeiterteam gebildet, das sich absolut   der Zufriedenstellung von Auftraggebern, dem  Umfangssteiegering von Aufträgen, der Dienstleisungsqualität  widemt.</p>
         </div>
 
         <div class="row">
@@ -292,27 +282,26 @@
         <div class="row  d-flex align-items-stretch">
 
           <div class="col-lg-12 faq-item" data-aos="fade-up" data-aos-delay="100">
-            <h4>PRIDRUŽI SE NAŠEM TIMU:</h4>
+            <h4>Treten Sie unserem Team bei:</h4>
             <img src="assets/img/pridružise.jpg" class="img-fluid" alt="">
                        <p>
-              S obzirom da konstantno razvijamo svoje poslovanje, obrazovani i pouzdani ljudi su uvek
-              dobrodošli u naš tim, možete poslati mail na <a href="mailto:office@elkod.rs?subject=Poslovi">office@elkod.rs</a>
+                       Da wir unser Geschäft ständig weiterentwickeln, sind gebildete und zuverlässige Menschen in unserem Team jederzeit willkommen. Sie können E-Mails an folgende Adresse senden: <a href="mailto:office@elkod.rs?subject=Poslovi">office@elkod.rs</a>
               
               <form action="/send" method="post" enctype="multipart/form-data">
     <div class="form-group">
-        <input class="form-control" placeholder="Email Adresa:" type="email" id="from_email" name="from_email" required><br><br>
+        <input class="form-control" placeholder="E-Mail-Adresse:" type="email" id="from_email" name="from_email" required><br><br>
     </div>
     
     <div class="form-group">
-        <input class="form-control" placeholder="Naslov:" type="text" id="subject" name="subject" required><br><br>
+        <input class="form-control" placeholder="Titel:" type="text" id="subject" name="subject" required><br><br>
     </div>
     
-    <textarea class="form-control" placeholder="Poruka:" id="message" name="message" required></textarea><br><br>
+    <textarea class="form-control" placeholder="Nachricht:" id="message" name="message" required></textarea><br><br>
     
-    <label for="file">Vaš CV:</label><br>
+    <label for="file">Ihr Lebenslauf:</label><br>
     <input type="file" id="file" name="file"><br><br>
     
-    <input class="apliciraj" type="submit" value="Apliciraj">
+    <input class="apliciraj" type="submit" value="Einreichen">
 </form>
 
 
@@ -341,16 +330,16 @@
 
         <div class="row">
 
-          <div class="col-lg-6 d-flex align-items-stretch" data-aos="fade-up">
+          <<div class="col-lg-6 d-flex align-items-stretch" data-aos="fade-up">
             <div class="info-box">
               <i class="bx bx-map"></i>
-              <h3>Adrese:</h3>
-              <h3>Adresa sedišta</h3>
-                    <p>Trg Nikole Pašića bb, TC Madesa, lokal br. 17</p> 
-                    <p> 22000 Sremska Mitrovica, Srbija</p>
-              <h3>Adresa predstavništva</h3>
+              <h3>Adressen</h3>
+              <h3>Anschrift des Firmensitzes</h3>
+                 <p>Trg nikole Pašića BB, TC Madesa</p> 
+                 <p>lokal br. 17 22000 Sremska Mitrovica</p>
+              <h3>Anschrift der Repräsentanz des Unternehmens</h3>
                     <p>Pirazzistraße 18</p> 
-                    <p>63067 Offenbach am Main, Deutschland</p>
+                    <p>63067 Offenbach am Main, Deutschland</p>   
             </div>
           </div>
 
@@ -368,7 +357,7 @@
           <div class="col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
             <div class="info-box ">
               <i class="bx bx-phone-call"></i>
-              <h3>Pozovite nas</h3>
+              <h3>Rufen Sie uns an</h3>
               <p>
  <a href="tel:+381 64 2577 884">+381 64 2577 884</a>
 
@@ -399,7 +388,6 @@
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-  <i>nesto</i>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
