@@ -300,22 +300,30 @@
               S obzirom da konstantno razvijamo svoje poslovanje, obrazovani i pouzdani ljudi su uvek
               dobrodošli u naš tim, možete poslati mail na <a href="mailto:office@elkod.rs?subject=Poslovi">office@elkod.rs</a>
               
-              <form action="/send" method="post" enctype="multipart/form-data">
-    <div class="form-group">
-        <input class="form-control" placeholder="Email Adresa:" type="email" id="from_email" name="from_email" required><br><br>
-    </div>
-    
-    <div class="form-group">
-        <input class="form-control" placeholder="Naslov:" type="text" id="subject" name="subject" required><br><br>
-    </div>
-    
-    <textarea class="form-control" placeholder="Poruka:" id="message" name="message" required></textarea><br><br>
-    
-    <label for="file">Vaš CV:</label><br>
-    <input type="file" id="file" name="file"><br><br>
-    
-    <input class="apliciraj" type="submit" value="Apliciraj">
-</form>
+  <form action="{{ route('contact.send') }}" method="post" enctype="multipart/form-data">
+  @csrf
+      <div class="form-group">
+          <input class="form-control" placeholder="Email Adresa:" type="email" id="from_email" name="from_email" required><br><br>
+      </div>
+      
+      <div class="form-group">
+          <input class="form-control" placeholder="Naslov:" type="text" id="subject" name="subject" required><br><br>
+      </div>
+      
+      <textarea class="form-control" placeholder="Poruka:" id="message" name="message" required></textarea><br><br>
+      
+      <label for="file">Vaš CV:</label><br>
+      <input type="file" id="file" name="file"><br><br>
+      
+      <input class="apliciraj" type="submit" value="Apliciraj">
+  </form>
+
+
+    @if(session('success'))
+        <script>
+          alert(`Message has been Sent!`);
+        </script>
+    @endif
 
 
 

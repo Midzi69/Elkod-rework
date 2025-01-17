@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\BrandController;
 use App\Http\Controllers\PartnerController;
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -19,6 +20,9 @@ Route::get('/projekat/{id}', [ProjectController::class, 'show'])->name('projects
 // MULTI-LANGUAGE
 Route::get('/en', [HomeController::class, 'indexEn']);
 Route::get('/de', [HomeController::class, 'indexDe']);
+
+// MAILER
+Route::post('/contact/send', [ContactController::class, 'send'])->name('contact.send');
 
 
 Route::get('/dashboard', function () {
