@@ -14,15 +14,15 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/brendovi', [BrandController::class, 'brendoviPocetna'])->name('brands');
 Route::get('/partneri', [PartnerController::class, 'partneriPocetna'])->name('partners');
 
+ // CONTACT FORM
+ Route::post('contact/send', [ContactController::class, 'send'])->name('contact.send');
+
 // SINGLE PROJECT
 Route::get('/projekat/{id}', [ProjectController::class, 'show'])->name('projects.show');
 
 // MULTI-LANGUAGE
 Route::get('/en', [HomeController::class, 'indexEn']);
 Route::get('/de', [HomeController::class, 'indexDe']);
-
-// MAILER
-Route::post('/contact/send', [ContactController::class, 'send'])->name('contact.send');
 
 
 Route::get('/dashboard', function () {
@@ -36,6 +36,7 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
+   
     // PROJECTS
     Route::resource('projects', ProjectController::class)->except(['show']);
 
