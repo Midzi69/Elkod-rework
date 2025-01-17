@@ -287,7 +287,8 @@
                        <p>
                        Da wir unser Geschäft ständig weiterentwickeln, sind gebildete und zuverlässige Menschen in unserem Team jederzeit willkommen. Sie können E-Mails an folgende Adresse senden: <a href="mailto:office@elkod.rs?subject=Poslovi">office@elkod.rs</a>
               
-              <form action="/send" method="post" enctype="multipart/form-data">
+              <form action="{{ route('contact.send') }}" method="post" enctype="multipart/form-data">
+              @csrf
     <div class="form-group">
         <input class="form-control" placeholder="E-Mail-Adresse:" type="email" id="from_email" name="from_email" required><br><br>
     </div>
@@ -304,6 +305,11 @@
     <input class="apliciraj" type="submit" value="Einreichen">
 </form>
 
+@if(session('success'))
+      <script>
+        alert(`Die Nachricht wurde gesendet!`);
+      </script>
+  @endif
 
 
               

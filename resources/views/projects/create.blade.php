@@ -28,7 +28,7 @@
                             <input type="file" id="picture" name="picture" class="mt-1 block w-full border border-gray-300 rounded-lg p-2">
                         </div>
 
-                        <button type="submit" class="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Save Project</button>
+                        <button type="submit" class="bg-blue-600  py-2 px-4 rounded hover:bg-blue-700">Save Project</button>
                     </form>
                 </div>
             </div>

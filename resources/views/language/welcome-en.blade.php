@@ -300,7 +300,8 @@
                        <p>
                        Since we are constantly developing our business, educated and reliable people are always welcome to our team. You can send mail to <a href="mailto:office@elkod.rs?subject=Poslovi">office@elkod.rs</a>
               
-              <form action="/send" method="post" enctype="multipart/form-data">
+              <form action="{{ route('contact.send') }}" method="post" enctype="multipart/form-data">
+              @csrf
     <div class="form-group">
         <input class="form-control" placeholder="Email Address:" type="email" id="from_email" name="from_email" required><br><br>
     </div>
@@ -317,7 +318,11 @@
     <input class="apliciraj" type="submit" value="Submit">
 </form>
 
-
+@if(session('success'))
+      <script>
+        alert(`The message has been sent!`);
+      </script>
+  @endif
 
               
             </p>

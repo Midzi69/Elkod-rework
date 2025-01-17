@@ -33,27 +33,6 @@
   <!-- Template Main CSS File -->
   <link href="/assets/css/style.css" rel="stylesheet">
 
-  <style>
-    .apliciraj { 
-  border: 0;
-  width: 150px;
-  height: 50px;
-  background-color: #2c3091;
-  color: #fff;
-  transition: .4s;
-
-}
-
-.apliciraj:hover {
-  background: #fff300;
-  color: black;
-}
-
-.apliciraj:focus{
-  outline: none;
-}
-  </style>
-
 </head>
 
 <body>
@@ -320,7 +299,7 @@
 
   @if(session('success'))
       <script>
-        alert(`Message has been Sent!`);
+        alert(`Slanje uspešno!`);
       </script>
   @endif
               

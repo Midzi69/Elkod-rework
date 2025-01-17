@@ -12,7 +12,8 @@
                     <h3 class="text-2xl font-semibold text-gray-800 mb-6">Your Projects</h3>
 
                     <!-- Add Project Button -->
-                    <a href="{{ route('projects.create') }}" class="inline-block mb-4 bg-blue-600 text-white py-2 px-6 rounded-lg hover:bg-blue-700 transition duration-300 ease-in-out">
+                   
+                    <a href="{{ route('projects.create') }}" class="inline-block mb-4 bg-green-600  py-2 px-6 rounded-lg hover:bg-green-700 transition duration-300 ease-in-out">
                         Add Project
                     </a>
 
