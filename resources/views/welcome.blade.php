@@ -11,28 +11,27 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.html" rel="apple-touch-icon">
+  <link href="{{ asset('assets/img/favicon.png') }}" rel="icon">
+  <link href="{{ asset('assets/img/apple-touch-icon.html') }}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('assets/vendor/icofont/icofont.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('assets/vendor/animate.css/animate.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('assets/vendor/venobox/venobox.css') }}" rel="stylesheet">
+  <link href="{{ asset('assets/vendor/owl.carousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
+  <link href="{{ asset('assets/vendor/aos/aos.css') }}" rel="stylesheet">
 
-  <link rel="preload" href="assets/img/slide/slide-1.webp" as="image">
-  <link rel="preload" href="assets/img/slide/slide-2.webp" as="image">
-  <link rel="preload" href="assets/img/slide/slide-3.webp" as="image">
+  <link rel="preload" href="{{ asset('assets/img/slide/slide-1.webp') }}" as="image">
+  <link rel="preload" href="{{ asset('assets/img/slide/slide-2.webp') }}" as="image">
+  <link rel="preload" href="{{ asset('assets/img/slide/slide-3.webp') }}" as="image">
 
   <!-- Template Main CSS File -->
-  <link href="/assets/css/style.css" rel="stylesheet">
-
+  <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
 </head>
 
 <body>
@@ -62,7 +61,7 @@
 
       <div class="logo float-left">
     
-         <a href="/"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+      <a href="/"><img src="{{ asset('assets/img/logo.png') }}" alt="" class="img-fluid"></a>
       </div>
 
       <nav class="nav-menu float-right d-none d-lg-block">
@@ -108,8 +107,8 @@
                 <p class="animate__animated animate__fadeInUp">Inženjering, projektovanje i izvođenje radova u oblasti elektroinstalacija.</p>
               </div>
             </div>
-            <img data-src="assets/img/slide/slide-1.webp" 
-                 srcset="assets/img/slide/slide-1-300.webp 300w, assets/img/slide/slide-1-600.webp 600w, assets/img/slide/slide-1.webp 1200w"
+            <img data-src="{{ asset('assets/img/slide/slide-1.webp') }}" 
+                 srcset="{{ asset('assets/img/slide/slide-1-300.webp') }} 300w, {{ asset('assets/img/slide/slide-1-600.webp') }} 600w, {{ asset('assets/img/slide/slide-1.webp') }} 1200w"
                  sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px, 1200px"
                  class="d-block w-100 lazyload" alt="Slide 1" loading="lazy">
           </div>
@@ -122,8 +121,8 @@
                 <p class="animate__animated animate__fadeInUp">Cilj preduzeća ELKOD je stručno obavljen posao, poštovanje rokova i ugovorenih obaveza.</p>
               </div>
             </div>
-            <img data-src="assets/img/slide/slide-2.webp" 
-                 srcset="assets/img/slide/slide-2-300.webp 300w, assets/img/slide/slide-2-600.webp 600w, assets/img/slide/slide-2.webp 1200w"
+            <img data-src="{{ asset('assets/img/slide/slide-2.webp') }}" 
+                 srcset="{{ asset('assets/img/slide/slide-2-300.webp') }} 300w, {{ asset('assets/img/slide/slide-2-600.webp') }} 600w, {{ asset('assets/img/slide/slide-2.webp') }} 1200w"
                  sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px, 1200px"
                  class="d-block w-100 lazyload" alt="Slide 2" loading="lazy">
           </div>
@@ -136,8 +135,8 @@
                 <p class="animate__animated animate__fadeInUp"></p>
               </div>
             </div>
-            <img data-src="assets/img/slide/slide-3.webp" 
-                 srcset="assets/img/slide/slide-3-300.webp 300w, assets/img/slide/slide-3-600.webp 600w, assets/img/slide/slide-3.webp 1200w"
+            <img data-src="{{ asset('assets/img/slide/slide-3.webp') }}" 
+                 srcset="{{ asset('assets/img/slide/slide-3-300.webp') }} 300w, {{ asset('assets/img/slide/slide-3-600.webp') }} 600w, {{ asset('assets/img/slide/slide-3.webp') }} 1200w"
                  sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px, 1200px"
                  class="d-block w-100 lazyload" alt="Slide 3" loading="lazy">
           </div>
@@ -166,7 +165,7 @@
 
         <div class="row no-gutters">
           <div class="col-lg-6 video-box">
-            <img src="assets/img/onama.png" class="img-fluid" alt="">
+          <img src="{{ asset('assets/img/onama.png') }}" class="img-fluid" alt="">
 
           </div>
 
@@ -274,8 +273,8 @@
 
           <div class="col-lg-12 faq-item" data-aos="fade-up" data-aos-delay="100">
             <h4>PRIDRUŽI SE NAŠEM TIMU:</h4>
-            <img src="assets/img/pridružise.jpg" class="img-fluid" alt="">
-                       <p>
+            <img src="{{ asset('assets/img/pridružise.jpg') }}" class="img-fluid" alt="">
+            <p>
               S obzirom da konstantno razvijamo svoje poslovanje, obrazovani i pouzdani ljudi su uvek
               dobrodošli u naš tim, možete poslati mail na <a href="mailto:office@elkod.rs?subject=Poslovi">office@elkod.rs</a>
               

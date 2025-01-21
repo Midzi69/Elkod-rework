@@ -15,7 +15,7 @@ class ContactController extends Controller
             'from_email' => 'required|email',
             'subject' => 'required|string',
             'message' => 'required|string',
-            'file' => 'nullable|file|max:10240', // Max 10MB
+            'file' => 'nullable|file|max:51200',
         ]);
 
         $emailData = [
@@ -29,7 +29,7 @@ class ContactController extends Controller
         Mail::send([], [], function ($message) use ($emailData, $filePath) {
             $message->from('milos.tordai@elkod.rs')
                     ->to('milos.tordai@elkod.rs')
-                    ->subject($emailData['subject'])
+                    ->subject("{$emailData['subject']} - {$emailData['fromEmail']}")
                     ->html($emailData['message']);
 
             if ($filePath) {

@@ -14,17 +14,18 @@ Route::get('/', [HomeController::class, 'index']);
 Route::get('/brendovi', [BrandController::class, 'brendoviPocetna'])->name('brands');
 Route::get('/partneri', [PartnerController::class, 'partneriPocetna'])->name('partners');
 
- // CONTACT FORM
- Route::post('contact/send', [ContactController::class, 'send'])->name('contact.send');
-
-// SINGLE PROJECT
-Route::get('/projekat/{id}', [ProjectController::class, 'show'])->name('projects.show');
-
 // MULTI-LANGUAGE
 Route::get('/en', [HomeController::class, 'indexEn']);
 Route::get('/de', [HomeController::class, 'indexDe']);
 
 
+// CONTACT FORM
+ Route::post('contact/send', [ContactController::class, 'send'])->name('contact.send');
+
+// SINGLE PROJECT
+Route::get('/projekat/{id}', [ProjectController::class, 'show'])->name('projects.show');
+
+// DASHBOARD
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
